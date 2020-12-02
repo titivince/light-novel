@@ -27,6 +27,9 @@ figure {
   color: white;
   border-radius: 10px;
 }
+.block{
+  min-width:80% ;
+}
 h3{
   margin: 10px 0 0 10px;
 }
