@@ -28,10 +28,11 @@ figure {
   border-radius: 10px;
 }
 .block{
-  min-width:80% ;
+  min-width:1% ;
 }
 h3{
   margin: 10px 0 0 10px;
+  border-bottom: white solid 1px;
 }
 p{
   margin: 10px 0 0 10px;

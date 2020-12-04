@@ -5,7 +5,7 @@ var forward = document.getElementById("suivant");
 var speed = 40; /* La vitesse de l'effet en ms */
 var i = 0;
 var mc = {
-  name: "",
+  name: "Vous",
   txt: "Salut ! Je vien d'arriver dans cette nouvelle ville , et bien sur une nouvelle école et de nouveaux amis.",
 };
 
