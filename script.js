@@ -1,21 +1,21 @@
 window.onload = function() {
 var outName = document.getElementById("name");
 var outTxt = document.getElementById("txt");
-var forward = document.getElementById("suivant");
+var suivant = document.getElementById("suivant");
 var speed = 40; /* La vitesse de l'effet en ms */
 var i = 0;
 var mc = {
   name: "Vous",
   txt: "Salut ! Je vien d'arriver dans cette nouvelle ville , et bien sur une nouvelle école et de nouveaux amis.",
 };
-
-function clear() {
+/* create function */
+function forward() {
   i = 0;
-  outName.innerHTML = '';
-  outTxt.innerHTML = '';
+  outName.innerHTML = ''; /* clear the name */
+  outTxt.innerHTML = ''; /* clear the text */
+  fastWriter();
 }
-
-function fastWriter() {
+function fastWriter() { /* create typing effect */
   if(mc.name.length > mc.txt.length){
     if (i < mc.name.length) {
       outName.innerHTML += mc.name.charAt(i);
@@ -33,9 +33,8 @@ function fastWriter() {
     }
   }
 }
-
-/*Fin initialisation */
-forward.addEventListener("click" , clear);
+/* start code */
+suivant.addEventListener("click", forward);
 
 fastWriter();
 /*while (forward == true)*/
