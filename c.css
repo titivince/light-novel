@@ -32,7 +32,11 @@ figure {
 }
 h3{
   margin: 10px 0 0 10px;
-  border-bottom: white solid 1px;
+  
+}
+hr{
+  margin: .2em;
+  background-color: white;
 }
 p{
   margin: 10px 0 0 10px;

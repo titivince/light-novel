@@ -2,8 +2,10 @@ window.onload = function() {
 var outName = document.getElementById("name");
 var outTxt = document.getElementById("txt");
 var suivant = document.getElementById("suivant");
-var speed = 40; /* La vitesse de l'effet en ms */
+var speed = 40; /* speed of the effetc in ms */
 var i = 0;
+var currentText = 0; /* counting var */
+var newText = 1;    /* counting var */
 var mc = {
   name: "Vous",
   txt: "Salut ! Je vien d'arriver dans cette nouvelle ville , et bien sur une nouvelle école et de nouveaux amis.",
@@ -11,6 +13,7 @@ var mc = {
 /* create function */
 function forward() {
   i = 0;
+  currentText++;
   outName.innerHTML = ''; /* clear the name */
   outTxt.innerHTML = ''; /* clear the text */
   fastWriter();
@@ -33,13 +36,23 @@ function fastWriter() { /* create typing effect */
     }
   }
 }
+function stop() {
+  if (newText != currentText) {
+    /* pause js or wait a click */
+    setTimeout(stop, 400);
+  }
+}
 /* start code */
 suivant.addEventListener("click", forward);
 
 fastWriter();
 /*while (forward == true)*/
+stop();
+newText++;
 mc.name = "Vous";
 mc.txt = "J'ai changé de ville car mon père a été promus dans l'entreprise.";
+stop();
+newText++;
 /*fastWriter();*/
 mc.txt = "J'ai changé d'école aussi alors je suis seul dans cette nouvelle ville et perdue en plus";
 /*fastWriter();*/
