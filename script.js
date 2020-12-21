@@ -28,7 +28,6 @@ function fastWriter() { /* create typing effect */
     }
   }else{
     if (i < mc.txt.length) {
-
       outName.innerHTML += mc.name.charAt(i);
       outTxt.innerHTML += mc.txt.charAt(i);
       i++;
@@ -57,4 +56,4 @@ newText++;
 mc.txt = "J'ai changé d'école aussi alors je suis seul dans cette nouvelle ville et perdue en plus";
 /*fastWriter();*/
 
-} /*<-- pas troucher a ca */
+}
