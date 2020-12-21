@@ -36,24 +36,22 @@ function fastWriter() { /* create typing effect */
   }
 }
 function stop() {
-  if (newText != currentText) {
+  console.log(newText,currentText);
+  if (newText == currentText) {
     /* pause js or wait a click */
-    setTimeout(stop, 400);
+    newText++;
   }
+  setTimeout(stop, 1000);
 }
 /* start code */
 suivant.addEventListener("click", forward);
 
 fastWriter();
-/*while (forward == true)*/
 stop();
-newText++;
+
 mc.name = "Vous";
 mc.txt = "J'ai changé de ville car mon père a été promus dans l'entreprise.";
-stop();
-newText++;
-/*fastWriter();*/
+
 mc.txt = "J'ai changé d'école aussi alors je suis seul dans cette nouvelle ville et perdue en plus";
-/*fastWriter();*/
 
 }
