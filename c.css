@@ -45,7 +45,8 @@ p{
   margin: 10px 0 0 10px;
   font-size: 18px;
 }
-button{align-self: flex-end;
+button{
+  align-self: flex-end;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
@@ -54,4 +55,16 @@ button:focus{
 }
 #suivant{
   padding: 5px;
+}
+.arrow{
+  position: relative;
+  animation: down 1s infinite linear alternate-reverse;
+}
+@keyframes down {
+  0%{
+    top: 0;
+  }
+  100%{
+    top: 6px;
+  }
 }
