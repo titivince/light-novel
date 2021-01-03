@@ -1,24 +1,25 @@
-### Light Novel
+# Light Novel
+
 You can use **everything** for your work
 One **simple** thing you have to do is put a [link](https://github.com/titivince/light-novel) to the original code or simply create a _fork_
 
-#### :warning: This work is under big progress :warning:
+## :warning: This work is under big progress :warning:
 
-#### State of the project pre-Alpha
+### State of the project pre-Alpha
 
 so feel free to help me in my work
 
 report all issue you can find
 
-##### Thing done :
+#### Thing done :
 
-- [x] everything fully responsive
-- [x] fix infite loop **Major bug**
-- [x] creates and operates the following text
-- [x] Create an typing effect
+- ✅ everything fully responsive
+- ✅ fix infite loop **Major bug**
+- ✅ creates and operates the following text
+- ✅ Create an typing effect
 
-##### To do list :
+#### To do list :
 
-- [ ] add **css** for the character
-- [ ] add start/option screen
-- [ ] fix possible issue
+- ⬜ add **css** for the character
+- ⬜ add start/option screen
+- ⬜ fix possible issue

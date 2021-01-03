@@ -20,7 +20,16 @@ figure {
     background-position: -100px 0;
   }
 }
-.txtbg{
+/* display the image of the character*/
+/* need 3 spaces for character
+ * overfow visible to be more realistic
+ * img or gif
+ * animation upward , left or right .5s opacity linear
+ * animation for possible slip or falling 
+ * animation for possible hit and shaking for falling unconscious
+ */
+ 
+.txtbg{ /* display the text */
   display: flex;
   justify-content: space-between;
   min-height: 15%;
