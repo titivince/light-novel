@@ -3,14 +3,17 @@
   margin: 0;
   padding: 0;
 }
+body{
+  background-image: url(bg.jpg);
+  animation: bg_animation 30s linear infinite alternate;
+}
 figure{
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   position: absolute;
-  background-image: url(bg.jpg);
-  animation: bg_animation 30s linear infinite alternate;
+  animation: blink_eyes 2.5s linear;
 }
  /* display the image of the character*/
 .character{ /* img or gif */
@@ -28,10 +31,10 @@ figure{
   z-index: 3;
 }
 #charbox2{
-  right: 5%;
+  left: 5%; 
 }
 #charbox3{
-  left: 5%; 
+  right: 5%;
 }
 .txtbg{ /* display the text */
   display: flex;
@@ -82,34 +85,34 @@ button{
   figure{
     overflow: hidden;
   }
-  #charbox2{
+  #charbox3{
     right: -10%;
   }
-  #charbox3{
+  #charbox2{
     left: -10%;
   }
 }
 @media screen and (max-width: 551px){
-  #charbox2{
+  #charbox3{
     right: -20%;
   }
-  #charbox3{
+  #charbox2{
     left: -20%;
   }
 }
 @media screen and (max-width: 426px){
-  #charbox2{
+  #charbox3{
     right: -25%;
   }
-  #charbox3{
+  #charbox2{
     left: -25%;
   }
 }
 @media screen and (max-width: 376px){
-  #charbox2{
+  #charbox3{
     right: -35%;
   }
-  #charbox3{
+  #charbox2{
     left: -35%;
   }
 }

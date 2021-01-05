@@ -16,14 +16,14 @@
       top: 6px;
     }
 }
-
 /* char animation
  * animation upward , left or right .5s opacity linear
  * animation for possible slip or falling 
  * animation for possible hit and shaking for falling unconscious
  */
- /* animation: shaking .8s linear; */
-@keyframes shaking { 
+
+/* animation: char_shaking .8s linear; */
+@keyframes char_shaking { 
     0%{
         top: 50px;
     }
@@ -38,5 +38,49 @@
     }
     100%{
         top: 50px;
+    }
+}
+/* animation: char_fade_in .2s linear; */
+@keyframes char_fade_in {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .1;
+        filter: grayscale(1);
+    }
+    50%{
+        opacity: .4;
+        filter: grayscale(.8);
+    }
+    75%{
+        opacity: .7;
+        filter: grayscale(.2);
+    }
+    100%{
+        opacity: 1;
+        filter: grayscale(0);
+    }
+}
+
+/* animation: blink_eyes 2.5s linear; */
+@keyframes blink_eyes {
+    0%{
+        background-color: black;
+    }
+    20%{
+        background-color: rgba(0, 0, 0, .4);
+    }
+    40%{
+        background-color: transparent;
+    }
+    60%{
+        background-color: rgba(0, 0, 0, .4);
+    }
+    80%{
+        background-color: black;
+    }
+    100%{
+        background-color: transparent;
     }
 }

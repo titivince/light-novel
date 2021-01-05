@@ -6,6 +6,7 @@ var speed = 30; /* speed of the typing effect in ms */
 var i = 0;
 var n;
 var currentText = 0; /* counting var */
+var newText = prompt("you can fast travel if you write a number.\nYou can track the story if you right click and inspect the element and select the console");
 var mc = {
   name: "Vous",
   txt: "Salut ! Je vien d'arriver dans cette nouvelle ville , et bien sur une nouvelle école et de nouveaux amis. Clicker sur la flèche pour passer au texte suivant.",
@@ -28,7 +29,7 @@ function fastWriter() { /* create typing effect */
   i++;
 }
 function control() {
-  console.log("current text :", currentText); /* Keep track in the story */
+  console.log("current text :" ,currentText); /* Keep track in the story */
 }
 function nextText() { /* create the main function */
   n = 1;
@@ -40,6 +41,9 @@ function nextText() { /* create the main function */
   }
   if ( currentText == n++ ) {
     mc.txt = "Bref je n'ai cas demander a un passant mon chemin.";
+  }
+  if ( currentText == n++ ) {
+    mc.txt = "Bonjour , je suis perdu. je dois aller a cette adresse.";
   }
   /* for more text just add if */
 }
@@ -54,8 +58,12 @@ function forward() {
 }
 /* start code */
 suivant.addEventListener("click", forward);
-console.log("here you can see were you are in the story");
+console.log("%cYou made it!", "color: #bada55","\nHere you can see were you are in the story");
 control();
 fastWriter();
-
+newText = parseInt(newText); /* try to convert the input in int */
+if (newText > 0){ /* check if user want to fast travel */
+  currentText = newText-1; /* make the fast travel */
+  newText == -1;
+}
 }
