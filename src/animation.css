@@ -1,0 +1,42 @@
+/* animation */
+
+@keyframes bg_animation {
+    0%  {
+      background-position: 0 -20px;
+    }
+    100%  {
+      background-position: -100px -20px; /* change the speed of the bg animation */
+    }
+}
+@keyframes arrow_animation {
+    0%{
+      top: 0;
+    }
+    100%{
+      top: 6px;
+    }
+}
+
+/* char animation
+ * animation upward , left or right .5s opacity linear
+ * animation for possible slip or falling 
+ * animation for possible hit and shaking for falling unconscious
+ */
+ /* animation: shaking .8s linear; */
+@keyframes shaking { 
+    0%{
+        top: 50px;
+    }
+    15%{
+        top: 65px;
+    }
+    45%{
+        top: 45px;
+    }
+    75%{
+        top: 65px;
+    }
+    100%{
+        top: 50px;
+    }
+}

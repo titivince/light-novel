@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="c.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <script src="src/script.js"></script>
     <title>Light novel</title>
 </head>
 <body>
     <figure>
         <!-- add 3 box for img or gif -->
+        <div class="character">
+            <div id="charbox2">
+                <img id="imgchar2" src="src/char2.gif">
+            </div>
+            <div id="charbox1">
+                <img id="imgchar1" src="src/char1.gif">
+            </div>
+            <div id="charbox3">
+                <img id="imgchar3" src="src/char3.gif">
+            </div>
+        </div>
         <div class="txtbg">
             <div class="block">
-                <h3 id="name"> </h3>
+                <h3 id="name"></h3>
                 <hr>
-                <p id="txt"> </p>
+                <p id="txt"></p>
             </div>
             <button id="suivant">
-                <img class="arrow" src="arrow.png">
+                <img class="arrow" src="src/arrow.png">
             </button>
         </div>
     </figure>

@@ -14,12 +14,13 @@ report all issue you can find
 #### Thing done :
 
 - ✅ everything fully responsive
-- ✅ fix infite loop **Major bug**
+- ✅ no infite loop **Major bug**
 - ✅ creates and operates the following text
 - ✅ Create an typing effect
+- ✅ add **css** for the character
 
 #### To do list :
 
-- ⬜ add **css** for the character
+- ⬜ add animation for the character and background
 - ⬜ add start/option screen
 - ⬜ fix possible issue
