@@ -6,10 +6,10 @@ var speed = 30; /* speed of the typing effect in ms */
 var i = 0;
 var n;
 var currentText = 0; /* counting var */
-var newText = prompt("you can fast travel if you write a number.\nYou can track the story if you right click and inspect the element and select the console");
+var newText = prompt("you can fast travel if you write a number.\nYou can track the story if you right click, inspect the element and select the console");
 var mc = {
   name: "Vous",
-  txt: "Salut ! Je vien d'arriver dans cette nouvelle ville , et bien sur une nouvelle école et de nouveaux amis. Clicker sur la flèche pour passer au texte suivant.",
+  txt: "Salut ! Je vien d'arriver dans cette nouvelle ville , et bien sur une nouvelle école et de nouveaux amis. Clicker sur la flèche pour passer au texte suivant."
 };
 /* create function */
 function fastWriter() { /* create typing effect */
@@ -45,6 +45,10 @@ function nextText() { /* create the main function */
   if ( currentText == n++ ) {
     mc.txt = "Bonjour , je suis perdu. je dois aller a cette adresse.";
   }
+  if ( currentText == n++ ) {
+    mc.name = 'Passant';
+    mc.txt = 'Ah vous aller à cette adresse';
+  }
   /* for more text just add if */
 }
 function forward() {
@@ -58,7 +62,7 @@ function forward() {
 }
 /* start code */
 suivant.addEventListener("click", forward);
-console.log("%cYou made it!", "color: #bada55","\nHere you can see were you are in the story");
+console.log("%cYou made it!", "color: #bada55; padding: 4px; border: 1px solid #bada55;","\nHere you can see were you are in the story");
 control();
 fastWriter();
 newText = parseInt(newText); /* try to convert the input in int */
