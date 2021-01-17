@@ -93,3 +93,39 @@
         background-color: transparent;
     }
 }
+.mc_hit{
+    animation: mc_hit 1s linear;
+}
+@keyframes mc_hit {
+    0%{
+        top: -20px;
+    }
+    15%{
+        top: 0px;
+        left: -25px;
+    }
+    30%{
+        top: -10px;
+        left: 0;
+    }
+    45%{
+        top: -20px;
+        left: -50px;
+    }
+    60%{
+        top: 0;
+        left: -20px;
+    }
+    75%{
+        top: -10px;
+        left: -40px;
+    }
+    90%{
+        top: 0;
+        left: -50px;
+    }
+    100%{
+        top: -20px;
+        left: -70px;
+    }
+}
