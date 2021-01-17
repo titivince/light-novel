@@ -6,7 +6,7 @@ var speed = 30; /* speed of the typing effect in ms */
 var i = 0;
 var n;
 var currentText = 0; /* counting var */
-var newText = prompt("you can fast travel if you write a number.\nYou can track the story if you right click, inspect the element and select the console");
+var newText = prompt("You can fast travel if you write a number.\nYou can track the story if you right click, inspect the element and select the console");
 var mc = {
   name: "Vous",
   txt: "Salut ! Je vien d'arriver dans cette nouvelle ville , et bien sur une nouvelle école et de nouveaux amis. Clicker sur la flèche pour passer au texte suivant."
@@ -67,7 +67,7 @@ control();
 fastWriter();
 newText = parseInt(newText); /* try to convert the input in int */
 if (newText > 0){ /* check if user want to fast travel */
-  currentText = newText-1; /* make the fast travel */
+  currentText = newText - 1; /* make the fast travel */
   newText == -1;
 }
 }

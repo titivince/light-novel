@@ -13,7 +13,6 @@ figure{
   display: flex;
   justify-content: center;
   position: absolute;
-  animation: blink_eyes 2.5s linear;
 }
  /* display the image of the character*/
 .character{ /* img or gif */
