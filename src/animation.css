@@ -69,6 +69,29 @@
         filter: grayscale(0);
     }
 }
+
+.char_move_in{
+    animation: char_move_in 1s linear;
+}
+@keyframes char_move_in {
+    0%{
+        scale: 1;
+    }
+    100%{
+        scale: 1.5;
+    }
+}
+.char_move_out{
+    animation: char_move_out 1s linear;
+}
+@keyframes char_move_out {
+    0%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
 /* mc animation */
 .mc_blink_eyes{
     animation: mc_blink_eyes 2.5s linear;
@@ -91,6 +114,20 @@
     }
     100%{
         background-color: transparent;
+    }
+}
+.mc_blind{
+    animation: mc_blind 1s linear;
+}
+@keyframes mc_blind {
+    0%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: rgba(0, 0, 0, .5);
+    }
+    100%{
+        background-color: #000;
     }
 }
 .mc_hit{
