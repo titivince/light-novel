@@ -34,4 +34,4 @@ If you don't have it just run the command `npm install -g typescript`
 
 If you don't know try `tsc --version` if you have an error it mean you don't have it
 
-This is very simple the **only** files you have to change is the [text.ts](https://github.com/titivince/light-novel/src/text.ts) and run the command `tsc text.ts` or `tsc text.ts -w` is use to watch and run `tsc core.ts`
+This is very simple the **only** files you have to change is the [text.ts](https://github.com/titivince/light-novel/blob/master/src/text.ts) and run the command `tsc text.ts` or `tsc text.ts -w` is use to watch and run `tsc core.ts`
