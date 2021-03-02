@@ -130,6 +130,60 @@
     background-color: #000;
   }
 }
+.mc_unblind {
+  animation: mc_unblind 1s linear;
+}
+@keyframes mc_unblind {
+  0% {
+    background-color: #000;
+  }
+  50% {
+    background-color: rgba(0, 0, 0, .5);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+.mc_flashback {
+  animation: mc_flashback 1s linear;
+}
+@keyframes mc_flashback {
+  0% {
+    background-color: transparent;
+  }
+  40% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: #fff;
+  }
+  60% {
+    background-color: rgba(100, 100, 100, 0.5);
+  }
+  100% {
+    background-color: rgba(100, 100, 100, 0.5);
+  }
+}
+.mc_end_flashback {
+  animation: mc_end_flashback 1s linear;
+}
+@keyframes mc_end_flashback {
+  0% {
+    background-color: rgba(100, 100, 100, 0.5);
+  }
+  40% {
+    background-color: rgba(100, 100, 100, 0.5);
+  }
+  50% {
+    background-color: #fff;
+  }
+  60% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
 .mc_hit {
   animation: mc_hit 1s linear;
 }
