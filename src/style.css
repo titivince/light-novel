@@ -1,13 +1,13 @@
 @import 'animation.css';
-*{
+* {
   margin: 0;
   padding: 0;
 }
-body{
+body {
   background-image: url(bg.jpg);
   animation: bg_animation 30s linear infinite alternate;
 }
-figure{
+figure {
   width: 100%;
   height: 100%;
   display: flex;
@@ -15,27 +15,27 @@ figure{
   position: absolute;
 }
  /* display the image of the character*/
-.character{ /* img or gif */
+.character { /* img or gif */
   height: 600px;
   width: 100%;
   margin-top: 50px;
   display: flex;
   justify-content: center;
 }
-#charbox1 ,#charbox2 ,#charbox3{
+#charbox1 ,#charbox2 ,#charbox3 {
   width: 350px;
   position: absolute;
 }
-#charbox1{/* char in front of the other */
+#charbox1 {/* char in front of the other */
   z-index: 3;
 }
-#charbox2{
+#charbox2 {
   left: 5%; 
 }
-#charbox3{
+#charbox3 {
   right: 5%;
 }
-.txtbg{ /* display the text */
+.txtbg { /* display the text */
   display: flex;
   align-self: flex-end;
   justify-content: space-between;
@@ -48,66 +48,66 @@ figure{
   color: white;
   border-radius: 10px;
 }
-.block{
+.block {
   min-width:1% ;
 }
-h3{
+h3 {
   margin: 10px 0 0 10px;
 }
-p{
+p {
   margin: 10px 0 0 10px;
   font-size: 16px;
 }
-button{
+button {
   cursor: pointer;
   align-self: flex-end;
   background-color: rgba(0, 0, 0, 0);
   border: none;
 }
-:focus{
+:focus {
   outline: none;
 }
-#suivant{
+#suivant {
   padding: 5px;
 }
-.arrow{
+.arrow {
   position: relative;
   animation: arrow_animation 1s infinite linear alternate-reverse;
 }
 /* Media querry */
 
-@media screen and (max-width: 769px){
-  figure{
+@media screen and (max-width: 769px) {
+  figure {
     overflow: hidden;
   }
-  #charbox3{
+  #charbox3 {
     right: -10%;
   }
-  #charbox2{
+  #charbox2 {
     left: -10%;
   }
 }
-@media screen and (max-width: 551px){
-  #charbox3{
+@media screen and (max-width: 551px) {
+  #charbox3 {
     right: -20%;
   }
-  #charbox2{
+  #charbox2 {
     left: -20%;
   }
 }
-@media screen and (max-width: 426px){
-  #charbox3{
+@media screen and (max-width: 426px) {
+  #charbox3 {
     right: -25%;
   }
-  #charbox2{
+  #charbox2 {
     left: -25%;
   }
 }
-@media screen and (max-width: 376px){
-  #charbox3{
+@media screen and (max-width: 376px) {
+  #charbox3 {
     right: -35%;
   }
-  #charbox2{
+  #charbox2 {
     left: -35%;
   }
 }

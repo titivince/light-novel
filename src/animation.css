@@ -1,20 +1,20 @@
 /* animation */
 
 @keyframes bg_animation {
-    0%  {
-      background-position: 0 -20px;
-    }
-    100%  {
-      background-position: -100px -20px; /* change the speed of the bg animation */
-    }
+  0% {
+    background-position: 0 -20px;
+  }
+  100% {
+    background-position: -100px -20px; /* change the speed of the bg animation */
+  }
 }
 @keyframes arrow_animation {
-    0%{
-      top: 0;
-    }
-    100%{
-      top: 6px;
-    }
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 6px;
+  }
 }
 /* char animation
  * animation upward , left or right .5s opacity linear
@@ -23,146 +23,146 @@
  */
 
 /* character animation */
-.char_shaking{
-    animation: char_shaking .8s linear;
+.char_shaking {
+  animation: char_shaking .8s linear;
 }
 @keyframes char_shaking { 
-    0%{
-        top: 50px;
-    }
-    15%{
-        top: 65px;
-    }
-    45%{
-        top: 45px;
-    }
-    75%{
-        top: 65px;
-    }
-    100%{
-        top: 50px;
-    }
+  0% {
+    top: 50px;
+  }
+  15% {
+    top: 65px;
+  }
+  45% {
+    top: 45px;
+  }
+  75% {
+    top: 65px;
+  }
+  100% {
+    top: 50px;
+  }
 }
-.char_fade_in{
-    animation: char_fade_in .2s linear;
+.char_fade_in {
+  animation: char_fade_in .2s linear;
 }
 @keyframes char_fade_in {
-    0%{
-        opacity: 0;
-        scale: .9;
-    }
-    25%{
-        opacity: .1;
-        filter: grayscale(1);
-    }
-    50%{
-        opacity: .4;
-        filter: grayscale(.8);
-    }
-    75%{
-        opacity: .7;
-        filter: grayscale(.2);
-    }
-    100%{
-        opacity: 1;
-        scale: 1;
-        filter: grayscale(0);
-    }
+  0% {
+    opacity: 0;
+    scale: .9;
+  }
+  25% {
+    opacity: .1;
+    filter: grayscale(1);
+  }
+  50% {
+    opacity: .4;
+    filter: grayscale(.8);
+  }
+  75% {
+    opacity: .7;
+    filter: grayscale(.2);
+  }
+  100% {
+    opacity: 1;
+    scale: 1;
+    filter: grayscale(0);
+  }
 }
 
-.char_move_in{
-    animation: char_move_in 1s linear;
+.char_move_in {
+  animation: char_move_in 1s linear;
 }
 @keyframes char_move_in {
-    0%{
-        scale: 1;
-    }
-    100%{
-        scale: 1.5;
-    }
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
 }
-.char_move_out{
-    animation: char_move_out 1s linear;
+.char_move_out {
+  animation: char_move_out 1s linear;
 }
 @keyframes char_move_out {
-    0%{
-        scale: 1.5;
-    }
-    100%{
-        scale: 1;
-    }
+  0% {
+    scale: 1.5;
+  }
+  100% {
+    scale: 1;
+  }
 }
 /* mc animation */
-.mc_blink_eyes{
-    animation: mc_blink_eyes 2.5s linear;
+.mc_blink_eyes {
+  animation: mc_blink_eyes 2.5s linear;
 }
 @keyframes blink_eyes {
-    0%{
-        background-color: black;
-    }
-    20%{
-        background-color: rgba(0, 0, 0, .4);
-    }
-    40%{
-        background-color: transparent;
-    }
-    60%{
-        background-color: rgba(0, 0, 0, .4);
-    }
-    80%{
-        background-color: black;
-    }
-    100%{
-        background-color: transparent;
-    }
+  0% {
+    background-color: black;
+  }
+  20% {
+    background-color: rgba(0, 0, 0, .4);
+  }
+  40% {
+    background-color: transparent;
+  }
+  60% {
+    background-color: rgba(0, 0, 0, .4);
+  }
+  80% {
+    background-color: black;
+  }
+  100% {
+    background-color: transparent;
+  }
 }
-.mc_blind{
-    animation: mc_blind 1s linear;
+.mc_blind {
+  animation: mc_blind 1s linear;
 }
 @keyframes mc_blind {
-    0%{
-        background-color: transparent;
-    }
-    50%{
-        background-color: rgba(0, 0, 0, .5);
-    }
-    100%{
-        background-color: #000;
-    }
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(0, 0, 0, .5);
+  }
+  100% {
+    background-color: #000;
+  }
 }
-.mc_hit{
-    animation: mc_hit 1s linear;
+.mc_hit {
+  animation: mc_hit 1s linear;
 }
 @keyframes mc_hit {
-    0%{
-        top: -20px;
-    }
-    15%{
-        top: 0px;
-        left: -25px;
-    }
-    30%{
-        top: -10px;
-        left: 0;
-    }
-    45%{
-        top: -20px;
-        left: -50px;
-    }
-    60%{
-        top: 0;
-        left: -20px;
-    }
-    75%{
-        top: -10px;
-        left: -40px;
-    }
-    90%{
-        top: 0;
-        left: -50px;
-    }
-    100%{
-        top: -20px;
-        left: -70px;
-    }
+  0% {
+    top: -20px;
+  }
+  15% {
+    top: 0px;
+    left: -25px;
+  }
+  30% {
+    top: -10px;
+    left: 0;
+  }
+  45% {
+    top: -20px;
+    left: -50px;
+  }
+  60% {
+    top: 0;
+    left: -20px;
+  }
+  75% {
+    top: -10px;
+    left: -40px;
+  }
+  90% {
+    top: 0;
+    left: -50px;
+  }
+  100% {
+    top: -20px;
+    left: -70px;
+  }
 }
