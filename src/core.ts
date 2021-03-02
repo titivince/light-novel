@@ -36,8 +36,6 @@ window.onload = function () {
   }
   /* start code */
   next.addEventListener("click" ,forward);
-  /* Here I add some style to the console */
-  console.log("%cYou made it!", "color: #bada55; padding: 4px; border: 1px solid #bada55;","\nHere you can see were you are in the story");
   control();
   fastWriter();
   //newText = parseInt(newText); /* try to convert the input in int */
