@@ -41,17 +41,19 @@ figure {
  /* display the image of the character */
 .character { /* img or gif */
   height: 600px;
-  width: 100%;
-  margin-top: 50px;
+  width: 100vw;
+  margin-top: 3vh;
   display: flex;
   justify-content: center;
 }
 #charbox1 ,#charbox2 ,#charbox3 {
   width: 350px;
+  height: 600px;
   position: absolute;
 }
 #charbox1 {/* char in front of the other */
   z-index: 3;
+  background-image: url('char1.png');
 }
 #charbox2 {
   left: 5%; 
