@@ -1,9 +1,17 @@
 window.onload = function () {
-  var outName = document.getElementById("name"),
+  var start = document.getElementById("start"),
+      startScreen = document.getElementById("startScreen"),
+      outName = document.getElementById("name"),
       outText = document.getElementById("text"),
       next = document.getElementById("next"),
       i = 0;
-
+  /* Start function */
+  function closeStart() {
+    startScreen.style.display = "none";
+    next.addEventListener("click" ,forward);
+    control();
+    fastWriter();
+  }
   /* Create the typing effect */
   function fastWriter() {
     if (mc.name.length > mc.text.length) {
@@ -35,9 +43,8 @@ window.onload = function () {
     fastWriter();
   }
   /* start code */
-  next.addEventListener("click" ,forward);
-  control();
-  fastWriter();
+  start.addEventListener("click" ,closeStart);
+  
   //newText = parseInt(newText); /* try to convert the input in int */
   //if (newText > 0){ /* check if user want to fast travel */
   //  currentText = newText - 1; /* make the fast travel */
