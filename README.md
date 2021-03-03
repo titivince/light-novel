@@ -2,36 +2,42 @@
 
 You can use **everything** for your work
 
-One **simple** thing you have to do is put a [link](https://github.com/titivince/light-novel) to the original code or simply create a _fork_
+One **simple** thing you have to do is put a [Link](https://github.com/titivince/light-novel) to the original code or simply create a _fork_
 
-## :warning: This work is under progress :warning:
+## :warning: Work in progress :warning:
 
-### State of the project Alpha
+### State of the project Alpha ( maybe )
 
-so feel free to help me in my work
+Feel free to help me in my work
 
-report all issue you can find
+Report all issue you can find
 
-#### Thing done :
+### Thing done :
 
-- ✅ everything fully responsive
-- ✅ no infite loop **Major bug**
-- ✅ creates and operates the following text
+- ✅ Everything fully responsive
+- ✅ No infite loop **Major bug**
+- ✅ Creates and operates the following text
 - ✅ Create an typing effect
-- ✅ add **css** for the character
+- ✅ Add **css** for the character
+- ✅ Add start screen
 
-#### To do list :
 
-- ⬜ add more animation for the character and background
-- ⬜ add start and option screen
-- ⬜ fix possible issue
+### To do list :
 
-## How it work
+- ⬜ Add more animation for the character and background
+- ⬜ Add option screen
+- ⬜ Add end screen
+- ⬜ Fix possible issue
+- ⬜ Create selection
+
+## How to try yourself
+
+This is very simple the **only** files you have to change is the [text.ts](https://github.com/titivince/light-novel/blob/master/src/text.ts)
 
 Before start coding make sure you have `Typescript` installed
 
-If you don't have it just run the command `npm install -g typescript`
+If you don't have it run the command `npm install -g typescript`
 
 If you don't know try `tsc --version` if you have an error it mean you don't have it
 
-This is very simple the **only** files you have to change is the [text.ts](https://github.com/titivince/light-novel/blob/master/src/text.ts) and run the command `tsc text.ts` or `tsc text.ts -w` is use to watch and run `tsc core.ts`
+Run the command `tsc text.ts` or `tsc text.ts -w` is use to watch and run `tsc core.ts` to generate the Javascript core
