@@ -44,20 +44,20 @@
   }
 }
 .char_fade_in {
-  animation: char_fade_in .2s linear;
+  animation: char_fade_in .3s linear;
 }
 @keyframes char_fade_in {
   0% {
     opacity: 0;
-    scale: .9;
+    transform: scale(.9);
   }
   25% {
     opacity: .1;
-    filter: grayscale(1);
+    filter: grayscale(.6);
   }
   50% {
     opacity: .4;
-    filter: grayscale(.8);
+    filter: grayscale(.4);
   }
   75% {
     opacity: .7;
@@ -65,7 +65,7 @@
   }
   100% {
     opacity: 1;
-    scale: 1;
+    transform: scale(1);
     filter: grayscale(0);
   }
 }
@@ -75,10 +75,10 @@
 }
 @keyframes char_move_in {
   0% {
-    scale: 1;
+    transform:scale(1);
   }
   100% {
-    scale: 1.5;
+    transform:scale(1.2);
   }
 }
 .char_move_out {
@@ -86,17 +86,17 @@
 }
 @keyframes char_move_out {
   0% {
-    scale: 1.5;
+    transform:scale(1.2);
   }
   100% {
-    scale: 1;
+    transform:scale(1);
   }
 }
 /* mc animation */
 .mc_blink_eyes {
-  animation: mc_blink_eyes 2.5s linear;
+  animation: mc_blink_eyes 2s linear;
 }
-@keyframes blink_eyes {
+@keyframes mc_blink_eyes {
   0% {
     background-color: black;
   }
@@ -158,10 +158,12 @@
     background-color: #fff;
   }
   60% {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: transparent;
+    filter: grayscale(.5);
   }
   100% {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: transparent;
+    filter: grayscale(.5);
   }
 }
 .mc_end_flashback {
@@ -169,10 +171,12 @@
 }
 @keyframes mc_end_flashback {
   0% {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: transparent;
+    filter: grayscale(.5);
   }
   40% {
-    background-color: rgba(100, 100, 100, 0.5);
+    background-color: transparent;
+    filter: grayscale(.5);
   }
   50% {
     background-color: #fff;
