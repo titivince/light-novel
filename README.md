@@ -20,6 +20,7 @@ Report all issue you can find
 - ✅ Create an typing effect
 - ✅ Add **css** for the character
 - ✅ Add start screen
+- ✅ Create add class and remove
 
 
 ### To do list :
@@ -40,4 +41,6 @@ If you don't have it run the command `npm install -g typescript`
 
 If you don't know try `tsc --version` if you have an error it mean you don't have it
 
-Run the command `tsc text.ts` or `tsc text.ts -w` is use to watch and run `tsc core.ts` to generate the Javascript core
+Run the script `watch.sh`
+
+## And your good to go!
