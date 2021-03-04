@@ -1,6 +1,10 @@
 window.onload = function () {
   var start = document.getElementById("start"),
       startScreen = document.getElementById("startScreen"),
+      background = document.getElementById("background"),
+      character1 = document.getElementById("character1"),
+      character2 = document.getElementById("character2"),
+      character3 = document.getElementById("character3"),
       outName = document.getElementById("name"),
       outText = document.getElementById("text"),
       next = document.getElementById("next"),

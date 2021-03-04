@@ -6,17 +6,21 @@ var speed = 30, // this is the speed of the typing effect
       name:'',
       text:''
     };
-function nextText() { // here is were the magic happen
+function nextText() { // here is where the magic happens
   n = 1;
-  if ( currentText == n++) { // the var n incremented
-    mc.text = "this is the first text";
+  if ( currentText == n++ ) { // the var n incremented
+    mc.text = "This is the first text";
   }
-  if (currentText == n++) {
-    mc.name = 'The first character'; // the name will stay if you dont change it
+  if ( currentText == n++ ) {
+    mc.name = 'The first character'; // the name will stay if you don't change it
     mc.text = 'Hello i\'m the second text';
+    character1.classList.add('char_move_in'); // add the animation to the character1
   }
-  if (currentText == n++) {
+  if ( currentText == n++ ) {
     mc.text = "This is the third text";
+    character1.classList.remove('char_move_in'); // remove the class of the character1
+    // or you can remove all class of the character1
+    character1.className = "";
   }
   // for new dialogue add this: if (currentText == n++) {mc.name = "/*someone*/";mc.text = "/*say something*/";}
 }
