@@ -28,19 +28,19 @@
 }
 @keyframes char_shaking { 
   0% {
-    top: 50px;
+    top: 4vh;
   }
   15% {
-    top: 65px;
+    top: 3.5vh;
   }
   45% {
-    top: 45px;
+    top: 4.2vh;
   }
   75% {
-    top: 65px;
+    top: 3.5vh;
   }
   100% {
-    top: 50px;
+    top: 4vh;
   }
 }
 .char_fade_in {
@@ -197,7 +197,7 @@
   }
   15% {
     top: 0px;
-    left: -25px;
+    left: -20px;
   }
   30% {
     top: -10px;
@@ -205,7 +205,7 @@
   }
   45% {
     top: -20px;
-    left: -50px;
+    left: -40px;
   }
   60% {
     top: 0;
@@ -217,10 +217,10 @@
   }
   90% {
     top: 0;
-    left: -50px;
+    left: -40px;
   }
   100% {
     top: -20px;
-    left: -70px;
+    left: -60px;
   }
 }
