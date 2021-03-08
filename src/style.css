@@ -56,13 +56,13 @@ figure {
   background: no-repeat url('char1.png');
 }
 #character2 {
-  left: 5%; 
+  left: 5%;
 }
 #character3 {
   right: 5%;
 }
 /* display the text */
-.txtbg { 
+.txtbg {
   display: flex;
   align-self: flex-end;
   justify-content: space-between;
@@ -107,34 +107,34 @@ button {
   figure {
     overflow: hidden;
   }
-  #charbox3 {
+  #character3 {
     right: -10%;
   }
-  #charbox2 {
+  #character2 {
     left: -10%;
   }
 }
 @media screen and (max-width: 551px) {
-  #charbox3 {
+  #character3 {
     right: -20%;
   }
-  #charbox2 {
+  #character2 {
     left: -20%;
   }
 }
 @media screen and (max-width: 426px) {
-  #charbox3 {
+  #character3 {
     right: -25%;
   }
-  #charbox2 {
+  #character2 {
     left: -25%;
   }
 }
 @media screen and (max-width: 376px) {
-  #charbox3 {
+  #character3 {
     right: -35%;
   }
-  #charbox2 {
+  #character2 {
     left: -35%;
   }
 }

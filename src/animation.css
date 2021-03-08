@@ -1,5 +1,4 @@
 /* animation */
-
 @keyframes bg_animation {
   0% {
     background-position: 0 -20px;
@@ -16,11 +15,6 @@
     top: 6px;
   }
 }
-/* char animation
- * animation upward , left or right .5s opacity linear
- * animation for possible slip or falling 
- * animation for possible hit and shaking for falling unconscious
- */
 
 /* character animation */
 .char_shaking {
@@ -81,6 +75,9 @@
     transform:scale(1.2);
   }
 }
+.char_move {
+  transform:scale(1.2);
+}
 .char_move_out {
   animation: char_move_out 1s linear;
 }
@@ -92,7 +89,7 @@
     transform:scale(1);
   }
 }
-/* mc animation */
+/* mc/background animation */
 .mc_blink_eyes {
   animation: mc_blink_eyes 2s linear;
 }
@@ -144,8 +141,8 @@
     background-color: transparent;
   }
 }
-.mc_flashback {
-  animation: mc_flashback 1s linear;
+.mc_start_flashback {
+  animation: mc_start_flashback 1s linear;
 }
 @keyframes mc_flashback {
   0% {
@@ -165,6 +162,9 @@
     background-color: transparent;
     filter: grayscale(.5);
   }
+}
+.mc_flashback {
+  filter: grayscale(.5);
 }
 .mc_end_flashback {
   animation: mc_end_flashback 1s linear;
